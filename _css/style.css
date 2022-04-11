@@ -1,0 +1,802 @@
+body{
+
+    max-width: 100%;
+    height: auto;
+    background: url(../_imagens/fundo.jpg) no-repeat;
+
+    background-size: 100%;
+    border: none;
+
+}
+
+header{
+
+    background-color: rgb(42, 42, 42, 0.6);
+
+}
+
+.menu_lateral{
+
+    position: relative;
+    transform: translateY(55vw);
+    background-color: darkslategray;
+    margin: -8px;
+    padding: 2vw;
+    color: white;
+    font-size: 2vw;
+}
+
+.menu_lateral ul li{
+
+    display:inline;
+    list-style: none;
+
+}
+
+.menu_lateral ul li a{
+
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    color: white;
+    font-size: 1.5vw;
+
+}
+
+.btn_categorias:hover{
+
+color: grey;
+
+}
+
+
+
+
+/* Menu a direita de navegação*/
+
+@media screen and (max-device-width: 767px){
+
+    .logo{
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .logo img{
+
+        width: 14vw;
+        height: auto;
+        margin: 4% auto;
+        
+    }
+    
+    .menu{
+    
+        display: flex;
+        align-items: center;
+        margin: -8px;
+
+    }
+    
+    
+    .menuHambur{
+    
+        position: fixed;
+        width: 8vw;
+        height: auto;
+        
+    }
+
+    .menuHambur img{
+    
+
+        width: 8vw;
+        height: auto;
+    
+    }
+
+    .menuDireita{
+
+        position: absolute;
+        top: 7vw;
+        left: -40px;
+        display: none;
+    }
+
+    .menuDireita ul li{
+    
+        display: block;
+        list-style: none;
+        margin-top: 4vw;
+        width: 200%;
+    }
+    
+    .menuDireita ul li a{
+    
+        text-decoration: none;
+        color: white;
+        background-color: tomato;
+        padding: 2vw;
+        margin-top: 2vw;
+        font-size: 5vw;
+        border: 1px solid black;
+       
+    
+    }
+    
+    .menuDireita ul li a:hover{
+    
+        color: grey;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 768px){
+
+.logo img{
+
+    width: 14vw;
+    height: auto;
+    margin: 4%;
+
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -8px;
+}
+
+
+.menuHambur{
+
+    display: none;
+
+}
+
+
+
+
+
+.menuDireita ul li{
+
+    display: inline;
+    list-style: none;
+
+}
+
+.menuDireita ul li a{
+
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-right: 2vw;
+    font-size: 2vw;
+
+}
+
+.menuDireita ul li a:hover{
+
+    color: grey;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Produtos */
+
+.area-1{
+
+    grid-area: area-1;
+
+}
+
+.area-2{
+
+    grid-area: area-2;
+
+}
+
+.area-3{
+
+    grid-area: area-3;
+
+}
+
+.area-4{
+
+    grid-area: area-4;
+
+}
+
+.area-5{
+
+    grid-area: area-5;
+
+}
+
+.area-6{
+
+    grid-area: area-6;
+
+}
+
+.principal{
+
+    margin-top: 60vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens{
+
+    display: grid;
+    grid-template-areas:
+    "area-1 area-2 area-3"
+    "area-4 area-5 area-6"
+    ;
+    
+}
+
+.imagens img{
+
+    border-bottom:2px solid silver;
+    border-radius: 20px 20px 0px 0px;
+    width: 25vw;
+    height: auto;
+    
+
+}
+
+.pgnImovel{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+.produto{
+
+    border: 2px solid grey;
+    border-radius: 20px;
+    width: 25vw;
+    margin: 10%;
+    
+}
+
+.preco{
+
+    text-align: right;
+    margin-right: 5px;
+    font-size: 1vw;
+    color: grey;
+
+}
+
+.produto h1{
+
+    font-size: 1vw;
+    font-size: 2vw;
+
+}
+
+.produto p{
+
+    font-size: 1.5vw;
+
+}
+
+
+#vermais{
+
+    text-align: center;
+    background-color: grey;
+    width: 8vw;
+    padding: 1.5vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    text-decoration: none;
+    color:black;
+
+}
+
+#iconseta{
+
+    width: 2vw;
+    height: auto;
+    vertical-align: bottom;
+
+}
+
+.btn_vermais{
+
+    margin-top: 2%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+article{
+
+    display: flex;
+    justify-content: center;
+    margin: 8% 0%;
+
+}
+
+
+.duvidas img{
+
+    display: inline;
+    width: 30vw;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 4px grey;
+
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+
+    background-color: chocolate;
+    padding: 10%;
+    margin: -8px;
+    display: flex;
+    font-size: 1vw;
+
+}
+
+.formFooter{
+
+    width: 70%;
+    text-align: center;
+}
+
+.campos input{
+
+    text-align: left;
+    margin-top: 4px;
+    width: 12vw;
+    height: 2.5vh;
+    
+}
+
+.email{
+
+    border-radius: 10px;
+
+}
+
+.enviar{
+
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: darkslategray;
+    border: none;
+    color: black;
+    transition: 0.7s;
+}
+
+.enviar:hover{
+
+    box-shadow: 0px 0px 16px 0px darkgrey;
+    background-color: grey;
+
+}
+
+.rodape-sobre{
+
+    text-align: center;
+    width: 40%;
+    float: right;
+
+}
+
+
+#direitos{
+
+    text-align: center;
+    background-color: darkslategray;
+    margin: -8px;
+    padding: 10px;
+
+
+}
+
+
+@media screen and (max-device-width: 480px){
+
+    body{
+
+        width:460px;
+
+    }
+
+    .menu_lateral{
+
+        position: relative;
+        transform: translateY(52vw);
+        background-color: darkslategray;
+        margin: -8px;
+        padding: 2vw;
+        color: white;
+        font-size: 2vw;
+    }
+
+    .campos input{
+
+        text-align: left;
+        margin-top: 4px;
+        width: 80px;
+        height: 8px;
+        border: none;
+          
+    }
+
+    .enviar{
+
+        font-size: 1vw;
+        margin-top: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: darkslategray;
+        border: none;
+        color: black;
+        transition: 0.7s;
+    }
+
+
+    #direitos{
+
+        text-align: center;
+        background-color: darkslategray;
+        margin: -8px;
+        padding: 10px;
+        font-size: 8px;
+    
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.principalContatos{
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.principalContatos input{
+
+    margin: 0.5vw;
+    padding: 10px;
+    font-size: 1vw;
+
+}
+
+.principalContatos hr{
+
+    width: 60%;
+
+}
+
+.enviarForm{
+
+    margin-top: 2%;
+    border:lightslategray 1px solid;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 10px;
+    width: 10%;
+    color: black;
+    transition: 0.7s;
+    font-size: 2.5vw;
+
+}
+
+.enviarForm:hover{
+
+    color: white;
+    background-color: blue;
+
+}
+
+
+
+
+.menu_lateralContatos{
+
+    padding: 8%;
+
+
+}
+
+
+
+
+
+
+
+
+/*contatos.html*/
+
+.img1Contatos{
+
+    width: 45vw;
+    height: 30vw;
+
+}
+
+.secao{
+
+    display: flex;
+    margin: 5%;
+
+}
+
+.secaoContatos{
+
+    margin:5%;
+
+}
+
+
+.sobre{
+
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.whatsapp{
+
+    grid-area: whatsapp;
+    transition: 0.7s;
+
+}
+
+.whatsapp:hover, .facebook:hover, .e-mail:hover{
+
+    border: 2px solid black;
+    padding-bottom: 30px;
+
+}
+
+.facebook{
+
+    grid-area: facebook;
+    transition: 0.7s;
+
+}
+
+.e-mail{
+
+    grid-area: e-mail;
+    transition: 0.7s;
+
+}
+
+
+.sobreContatos{
+
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+
+    grid-template-areas: 
+    "whatsapp e-mail facebook";
+    
+}
+
+.sobreContatos img{
+
+    width: 8vw;
+    height: auto;
+    
+
+}
+
+.sobreContatos a{
+
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+.img2Contatos{
+
+    width: 45vw;
+    height: 30vw;
+
+}
+
+
+
+
+
+/*Imovel.html*/
+
+
+.imgImovel{
+
+    width: 60vw;
+    height: 60vw;
+    
+}
+
+.imovel{
+
+    display:flex;
+
+}
+
+.imovelInformacoes{
+
+    display: block;
+    font-size: 2.5vw;
+    margin-left: 2%;
+    
+}
+
+.meioContato{
+
+    margin: 2%;
+    text-align: center;
+
+}
+
+.campo{
+
+    margin: 1%;
+
+}
+
+.galeria{
+
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+
+}
+
+.galeria img{
+
+    margin: 1%;
+    width: 12vw;
+    height: auto;
+    border: 1px solid grey;
+
+}
+
+
+
+
+/*cadastro.html*/
+
+.formCadastro{
+
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+    background-color:chocolate;
+    width: 40%;
+    padding: 7vw;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, chocolate, #b0632c);
+}
+
+
+
+.formCadastro input{
+
+    margin: 0.5%;
+    
+}
+
+
+.formCEP{
+
+    margin-top: 2%;
+
+}
+
+.formBtnCadastrar{
+
+    padding: 2%;
+    background-color: #00c800;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.formBtnCadastrar:hover{
+
+    background-color: #00fa00;
+    
+}
+
